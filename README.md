@@ -2,7 +2,7 @@
 
 ##  - Running the files
       - Run through command line using:
-          `python BinaryTreeMapVisualization.py`
+          > `python BinaryTreeMapVisualization.py`
       - Run on PyCharm by opening the cloned repo folder as a PyCharm project
 
 ##  - Importing Other Implementations of BinarySearchTreeMap
