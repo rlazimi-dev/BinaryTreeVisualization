@@ -1,4 +1,5 @@
-from BinaryTreeVisualization.BinarySearchTreeMap import BinarySearchTreeMap
+#!/usr/bin/env python
+import BinarySearchTreeMap
 import math
 import turtle
 import time
@@ -73,7 +74,7 @@ def draw_node(x, y, node=None, radius=5, fill=True):
 
 
 def draw_subtree(subtree_root, node_radius=10):
-    new_tree = BinarySearchTreeMap(subtree_root)
+    new_tree = BinarySearchTreeMap.BinarySearchTreeMap(subtree_root)
     draw_tree_recursive(new_tree, node_radius)
 
 def draw_tree_recursive(bst, node_radius=10, bound_left=10, bound_right=screen_width - 10, y_pos=screen_height - 80):
@@ -188,7 +189,7 @@ def create_complete_bst(first_to_end):
 
 
 def create_complete_bst_helper(first_to_start, first_to_end):
-    bst = BinarySearchTreeMap()
+    bst = BinarySearchTreeMap.BinarySearchTreeMap()
     add_items(bst, first_to_start, first_to_end)
     return bst
 
