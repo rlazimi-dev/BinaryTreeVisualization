@@ -160,30 +160,6 @@ def draw_tree_recursive_helper(bst, node_radius, root, bound_left, bound_right, 
 
     pass
 
-
-def is_balanced(bst):
-    return is_balanced_helper(bst.root)[0]
-
-
-def is_balanced_helper(root):
-    # Output: (balance_state, height)
-    if (root is None):
-        return (True, 0)
-    else:
-        # When calling on children, return height of both children and whether or not each is balanced
-        # What's left is to continue if height difference <= 1 && if both are balanced
-
-        pair_left = is_balanced_helper(root.left)
-        pair_right = is_balanced_helper(root.right)
-
-        children_both_balanced = pair_left[0] and pair_right[0]
-        child_height_difference = abs(pair_left[1] - pair_right[1])
-
-        height_curr = max(pair_left[1], pair_right[1]) + 1
-
-        return (children_both_balanced and child_height_difference <= 1, height_curr)
-
-
 def create_complete_bst(first_to_end):
     return create_complete_bst_helper(1, first_to_end)
 
