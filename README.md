@@ -8,3 +8,6 @@
 ##  - Importing Other Implementations of BinarySearchTreeMap
       - The current visualization program assumes BinarySearchTreeMap class contains a class Node with class variables: left, right, parent, height
       - In case another implementation of BinarySearchTreeMap containing different variable names for Node is used, be sure to update BinarySearchTreeMapVisualization so the correct fields of Node are accessed
+
+##  - Example Tree
+![alt text](https://github.com/rlazimi-dev/BinaryTreeVisualization/blob/master/Images/height-5.png)
